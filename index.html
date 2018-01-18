@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Crazy Image</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.bootcss.com/angular.js/1.6.4/angular.min.js"></script>
+	<script src="https://cdn.bootcss.com/angular.js/1.6.4/angular-route.min.js"></script>
+</head>
+<body>
+	<div id="content">
+		<header ng-controller="headCtrl">
+			<div class="option" ng-click="close()">&#x2716;</div>
+			<div class="option" ng-click="maximize()">M</div>
+			<div class="option" ng-click="minimize()">-</div>
+		</header>
+		<div id="mainContent" ng-view></div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
